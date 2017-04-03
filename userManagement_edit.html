@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>zzf 后台管理</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">智纺人才</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">智纺人才后台管理</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+            <li><a href="index.html"><i class="fa fa-home"></i> 首页</a></li>
+            <li class="dropdown open"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 用户管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="active "><a href="userManagement.html">个人用户</a></li>
+                <li><a href="userManagement.html">企业用户</a></li>
+              </ul>
+            </li>
+            <li><a href="jobsManagement.html"><i class="fa fa-list-alt"></i> 职位管理</a></li>
+            <li><a href=""><i class="fa fa-desktop"></i> 平台管理</a></li>
+            <li><a href=""><i class="fa fa-envelope"></i> 消息管理</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-wrench"></i> 常规管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">公告管理</a></li>
+                <li><a href="#">广告管理</a></li>
+                <li><a href="#">友情链接</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown messages-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> 通知 <span class="badge">7</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">7 新的消息</li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">用户张三:</span>
+                    <span class="message">最新发布了一个新职位，请求审核</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">用户张三:</span>
+                    <span class="message">最新发布了一个新职位，请求审核</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">用户张三:</span>
+                    <span class="message">最新申请了个人认证，请求审核</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">查看更多 <span class="badge">7</span></a></li>
+              </ul>
+            </li>
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 管理员admin <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-envelope"></i> 消息 <span class="badge">7</span></a></li>
+                <li><a href="#"><i class="fa fa-gear"></i> 设置</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> 退出</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ol class="breadcrumb">
+              <li><a href="index.html"><i class="fa fa-home"></i> 首页</a></li>
+              <li><a href=""><i class="fa fa-user"></i> 用户管理</a></li>
+              <li class="active"><i class="fa"></i> 个人用户管理</li>
+              <li class="active"><i class="fa"></i> 账号新增</li>
+            </ol>
+            <!-- <div class="alert alert-info box_option">
+                <button type="button" class="btn btn-primary">新增</button>    
+                <button type="button" class="btn btn-primary">修改</button>              
+                <button type="button" class="btn btn-danger">删除</button>              
+            </div>  -->
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <form role="form" style="width: 300px; margin: 0px 45px;">
+              <div class="form-group input-group">
+                <span class="input-group-addon">用户名</span>
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group input-group">
+                <span class="input-group-addon">手机号</span>
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group input-group">
+                <span class="input-group-addon">密码</span>
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-primary">保存</button>    
+                <button type="button" class="btn btn-default">返回</button>
+              </div>
+          </form>
+        </div>
+        
+
+
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Page Specific Plugins -->
+    <script src="js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="js/tablesorter/tables.js"></script>
+
+  </body>
+</html>

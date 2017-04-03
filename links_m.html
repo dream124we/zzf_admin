@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>zzf 后台管理</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <!-- 弹出框样式 -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/userM.css">
+    
+  </head>
+
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">智纺人才</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">智纺人才后台管理</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-home"></i> 首页</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 用户管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="userManagement.html">个人用户</a></li>
+                <li><a href="companyManagement.html">企业用户</a></li>
+                <li><a href="userStatistics.html">用户统计</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list-alt"></i> 职位管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="jobsManagement.html">职位信息</a></li>
+                <li><a href="jobStatistics.html">职位统计</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list-alt"></i> 档案管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="jobClass_m.html">职位类别</a></li>
+                <li><a href="machineClass_m.html">机器类别</a></li>
+                <li><a href="welfare_m.html">福利待遇</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-desktop"></i> 资金管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="platformFunds_m.html">平台资金</a></li>
+                <li><a href="userFunds_m.html">用户资金</a></li>
+                <!-- <li><a href=".html">资金统计</a></li> -->
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> 消息管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="message_m.html">平台信息</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-wrench"></i> 常用管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="news_m.html">网站公告</a></li>
+                <li><a href="advertisings_m.html">网站广告</a></li>
+                <li><a href="links_m.html">友情链接</a></li>
+                <li><a href="trafficStatistics_m.html">流量统计</a></li>
+                <li><a href="seoOptimized_m.html">seo优化</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown messages-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> 通知 <span class="badge">7</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">7 新的消息</li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">用户张三:</span>
+                    <span class="message">最新发布了一个新职位，请求审核</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">用户张三:</span>
+                    <span class="message">最新发布了一个新职位，请求审核</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">用户张三:</span>
+                    <span class="message">最新申请了个人认证，请求审核</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">查看更多 <span class="badge">7</span></a></li>
+              </ul>
+            </li>
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 管理员admin <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-envelope"></i> 消息 <span class="badge">7</span></a></li>
+                <li><a href="#"><i class="fa fa-gear"></i> 设置</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> 退出</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+
+      <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ol class="breadcrumb">
+              <li><a href="index.html"><i class="fa fa-home"></i> 首页</a></li>
+              <li><a href=""><i class="fa fa-wrench"></i> 常用管理</a></li>
+              <li class="active"><i class="fa"></i> 友情链接</li>
+            </ol>
+            <!-- <ul class="nav nav-tabs">
+                <li class="active"><a href="#con_all" data-toggle="tab">全部</a></li>
+                <li><a href="#con_verify" data-toggle="tab">待审核</a></li>
+                <li><a href="#con_verifySucc" data-toggle="tab">已审核通过</a></li>
+                <li><a href="#con_verifyFail" data-toggle="tab">审核不通过</a></li>
+            </ul>-->
+            <div class="alert alert-info box_option">
+                <div class="form-group input-group" style="width: 280px; float: left;">
+                  <input type="text" class="form-control" placeholder="输入关键字查询">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                  </span>
+                </div>
+                <button type="button" class="btn btn-warning" id="add_links">新增</button> 
+                <button type="button" class="btn btn-default">编辑</button> 
+                <button type="button" class="btn btn-danger">删除</button>
+            </div>  
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row tab-content">
+          <div class="tab-pane fade in active" id="con_all">
+            <div class="col-lg-12">
+              <div class="table-responsive">
+                <table class="table table-hover tablesorter">
+                  <thead>
+                    <tr>
+                      <th width="5%"><input type="checkbox" name=""></th>
+                      <th>链接名称 </th>
+                      <th>链接地址 </th>
+                      <th>排序 <i class="fa fa-sort"></i></th>
+                      <th>操作 </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="btn_deltail">
+                      <td><input type="checkbox" name=""></td>
+                      <td>浙江棒杰</td>
+                      <td><a href="">http://www.zhifangw.cn</a></td>
+                      <td>1</td>
+                      <td>
+                        <button type="button" class="btn btn-default">编辑</button> 
+                        <button type="button" class="btn btn-danger">删除</button>
+                      </td>
+                    </tr>
+                    <tr class="btn_deltail">
+                      <td><input type="checkbox" name=""></td>
+                      <td>浙江棒杰</td>
+                      <td><a href="">http://www.zhifangw.cn</a></td>
+                      <td>2</td>
+                      <td>
+                        <button type="button" class="btn btn-default">编辑</button> 
+                        <button type="button" class="btn btn-danger">删除</button>
+                      </td>
+                    </tr>
+                    <tr class="btn_deltail">
+                      <td><input type="checkbox" name=""></td>
+                      <td>浙江棒杰</td>
+                      <td><a href="">http://www.zhifangw.cn</a></td>
+                      <td>3</td>
+                      <td>
+                        <button type="button" class="btn btn-default">编辑</button> 
+                        <button type="button" class="btn btn-danger">删除</button>
+                      </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+              <div class="bs-example">
+                <ul class="pagination">
+                  <li class="disabled"><a href="#">«</a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">»</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div><!-- /.row -->
+
+
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+
+    <div id="dialog_deltailLinks" title="友情链接详情">
+      <div class="dialog_content">
+         <div class="col-lg-12 linksDel_list">
+            <div class="form-group">
+              <label>链接名称：</label>
+              <input class="form-control" value="dajkadas">
+            </div>
+            <div class="form-group">
+              <label>链接地址：</label>
+              <input class="form-control" value="15235645569">
+            </div>
+            <div class="form-group">
+              <label>排序：</label>
+              <input class="form-control" value="浙江棒杰数码针织有限公司">
+            </div>           
+         </div>
+         
+      </div>
+      <div class="dialog_button clearfix">
+        <button type="button" class="btn btn-warning">保存</button>
+        <button type="button" class="btn close_dialog">关闭</button>
+      </div><!-- /.dialog_button -->
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Page Specific Plugins -->
+    <script src="js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="js/tablesorter/tables.js"></script>
+
+    <!-- dialog弹出框js -->
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+    $(function() {
+      $( "#dialog_deltailLinks" ).dialog({
+        autoOpen: false,
+        width:550,
+        show: {
+          effect: "blind",
+          duration: 1000
+        },
+        hide: {
+          effect: "explode",
+          duration: 1000
+        }
+      });
+
+      $( ".btn_deltail" ).click(function() {
+        $( "#dialog_deltailLinks" ).dialog( "open" );
+      });
+      $( "#add_links" ).click(function() {
+        $( "#dialog_deltailLinks" ).dialog( "open" );
+      });
+    });
+    </script>
+
+  </body>
+</html>

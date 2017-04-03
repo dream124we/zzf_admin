@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>zzf 后台管理</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="css/morris-0.4.3.min.css">
+  </head>
+ 
+  <body>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">智纺人才</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">智纺人才后台管理</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling <img src="images\admin_logo.png">-->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+            <li class="active"><a href="index.html"><i class="fa fa-home"></i> 首页</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 用户管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="userManagement.html">个人用户</a></li>
+                <li><a href="companyManagement.html">企业用户</a></li>
+                <li><a href="userStatistics.html">注册量统计</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list-alt"></i> 职位管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="jobsManagement.html">职位信息</a></li>
+                <li><a href="jobStatistics.html">职位统计</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list-alt"></i> 档案管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="jobClass_m.html">职位类别</a></li>
+                <li><a href="machineClass_m.html">机器类别</a></li>
+                <li><a href="welfare_m.html">福利待遇</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-desktop"></i> 资金管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="platformFunds_m.html">平台资金</a></li>
+                <li><a href="userFunds_m.html">用户资金</a></li>
+                <!-- <li><a href=".html">资金统计</a></li> -->
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> 消息管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="message_m.html">平台消息</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-wrench"></i> 常用管理 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="news_m.html">网站公告</a></li>
+                <li><a href="advertisings_m.html">网站广告</a></li>
+                <li><a href="links_m.html">友情链接</a></li>
+                <li><a href="trafficStatistics_m.html">流量统计</a></li>
+                <li><a href="seoOptimized_m.html">seo优化</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right navbar-user">
+            <li class="dropdown messages-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> 通知 <span class="badge">7</span> <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header">7 新的消息</li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">用户张三:</span>
+                    <span class="message">最新发布了一个新职位，请求审核</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">用户张三:</span>
+                    <span class="message">最新发布了一个新职位，请求审核</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="message-preview">
+                  <a href="#">
+                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                    <span class="name">用户张三:</span>
+                    <span class="message">最新申请了个人认证，请求审核</span>
+                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">查看更多 <span class="badge">7</span></a></li>
+              </ul>
+            </li>
+            <li class="dropdown user-dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 管理员admin <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-envelope"></i> 消息 <span class="badge">7</span></a></li>
+                <li><a href="#"><i class="fa fa-gear"></i> 设置</a></li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="fa fa-power-off"></i> 退出</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+		<!-- <div class="copyrights">Collect from </div> -->
+      <div id="page-wrapper">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>智纺人才 <small>后台管理系统</small></h1>
+            <ol class="breadcrumb">
+              <li class="active"><i class="fa fa-clock-o"></i> 上一次登录时间：2016-12-26 15:00:00</li>
+            </ol>
+            <div class="alert alert-success alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              欢迎 <a class="alert-link" href=""> 管理员admin </a>登录智纺人才后台管理系统！
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-user fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announcement-heading">456</p>
+                    <p class="announcement-text">用户数量</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      查看详情
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-check fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announcement-heading">12</p>
+                    <p class="announcement-text">成功招聘</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      查看详情
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-tasks fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announcement-heading">18</p>
+                    <p class="announcement-text">待审核职位</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      查看详情
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-comments fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announcement-heading">56</p>
+                    <p class="announcement-text">系统消息</p>
+                  </div>
+                </div>
+              </div>
+              <a href="#">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      查看详情
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> 上个月发布职位统计: 2016/12/01 - 2016/12/31</h3>
+              </div>
+              <div class="panel-body">
+                <div id="morris-chart-area"></div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        
+
+      </div><!-- /#page-wrapper -->
+
+    </div><!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Page Specific Plugins -->    <script src="js/raphael-min.js"></script>
+    <script src="js/morris-0.4.3.min.js"></script>
+    <script src="js/morris/chart-data-morris.js"></script>
+    <script src="js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="js/tablesorter/tables.js"></script>
+
+  </body>
+</html>
